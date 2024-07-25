@@ -3,7 +3,7 @@
 Enha
 
 <p align="center">
-  <img src="https://github.com/LukeWait/gc-esports/raw/main/src/images/gc-esports-app-screenshot.png" alt="App Screenshot" width="700">
+  <img src="https://github.com/LukeWait/gc-esports-app/raw/main/src/images/gc-esports-app-screenshot.png" alt="App Screenshot" width="700">
 </p>
 
 ## Table of Contents
