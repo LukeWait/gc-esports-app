@@ -7,7 +7,7 @@ Date:       03-Sept-2022
 Version:    3.0
 NOTES:      Complete
  */
-package gc_egames_gui;
+package gcesportsapp;
 
 import java.util.ArrayList;
 

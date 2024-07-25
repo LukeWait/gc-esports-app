@@ -8,7 +8,7 @@ NOTES:      Complete
             See the Technical Report: Development Plan section
             for functionality checklist
  */
-package gc_egames_gui;
+package gcesportsapp;
 
 // reading
 import java.io.BufferedReader;
@@ -31,7 +31,7 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
 
-public class GC_EGames_GUI extends javax.swing.JFrame 
+public class GCEsportsApp extends javax.swing.JFrame 
 {
     // private data
     // for storing comp results
@@ -43,7 +43,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
 
     
     //************ CONSTRUCTOR METHOD ************
-    public GC_EGames_GUI() 
+    public GCEsportsApp() 
     {
         //************ INITIALISE PRIVATE DATA FIELDS ************
         competitions = new ArrayList<>();
@@ -103,7 +103,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         try
         {
             // create reader and designate external file to read from
-            FileReader fr = new FileReader("teams.csv");
+            FileReader fr = new FileReader("src/data/teams.csv");
             // create bufferedReader which uses the reader object
             BufferedReader br = new BufferedReader(fr);
             // declare line string (used to read and store each line from file)
@@ -143,7 +143,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         try
         {
             // create reading objects
-            FileReader fr = new FileReader("players.csv");
+            FileReader fr = new FileReader("src/data/players.csv");
             BufferedReader br = new BufferedReader(fr);
             String line;
 
@@ -202,7 +202,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         try
         {
             // create reader and designate external file to read rom
-            FileReader fr = new FileReader("competitions.csv");
+            FileReader fr = new FileReader("src/data/competitions.csv");
             // create bufferedReader which uses the reader object
             BufferedReader br = new BufferedReader(fr);
             // declare line string (used to read and store each line read from file)
@@ -273,7 +273,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         try
         {
             // create outputStream and designate the external file to write
-            FileOutputStream fos = new FileOutputStream("teams.csv", false);
+            FileOutputStream fos = new FileOutputStream("src/data/teams.csv", false);
             // create outputStreamWriter and designate the character set
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             // create bufferedWriter which uses the outputStreamWriter
@@ -304,7 +304,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         try
         {
             // create outputStream and designate the external file to write
-            FileOutputStream fos = new FileOutputStream("players.csv", false);
+            FileOutputStream fos = new FileOutputStream("src/data/players.csv", false);
             // create outputStreamWriter and designate the character set
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             // create bufferedWriter which uses the outputStreamWriter
@@ -339,7 +339,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         try
         {
             // create outputStream and designate the external file to write to
-            FileOutputStream fos = new FileOutputStream("competitions.csv", false);
+            FileOutputStream fos = new FileOutputStream("src/data/competitions.csv", false);
             // create outputStreamWriter and designate the character set
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             // create bufferedWriter which uses the outputStreamWriter to write to file                    
@@ -920,7 +920,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         header_jPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         image_jLabel.setBackground(new java.awt.Color(255, 255, 255));
-        image_jLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/GoldCoastESports_Header.jpg"))); // NOI18N
+        image_jLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gc-esports-header.jpg"))); // NOI18N
         image_jLabel.setMaximumSize(null);
         image_jLabel.setMinimumSize(null);
         image_jLabel.setPreferredSize(null);
@@ -1361,14 +1361,15 @@ public class GC_EGames_GUI extends javax.swing.JFrame
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GC_EGames_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GCEsportsApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GC_EGames_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GCEsportsApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GC_EGames_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GCEsportsApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GC_EGames_GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GCEsportsApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -1376,7 +1377,7 @@ public class GC_EGames_GUI extends javax.swing.JFrame
         {
             public void run() 
             {
-                new GC_EGames_GUI().setVisible(true);
+                new GCEsportsApp().setVisible(true);
             }
         });
     }
