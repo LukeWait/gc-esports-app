@@ -27,12 +27,12 @@ Ensure that Java JDK 17 is installed on your system:
 ### Executable
 1. Download the latest release from the [releases page](https://github.com/LukeWait/gc-esports-app/releases).
 2. Extract the contents to a desired location.
-3. Run the `GCEsportsApp.jar` file:
-   - **Windows**: Simply double-click the `GCEsportsApp.jar` file to run it.
+3. Run the `gc-esports-app.jar` file:
+   - **Windows**: Simply double-click the `gc-esports-app.jar` file to run it.
    - **Linux**: Make the `.jar` file executable and run it:
      ```sh
-     chmod +x GCEsportsApp.jar
-     java -jar GCEsportsApp.jar
+     chmod +x gc-esports-app.jar
+     java -jar gc-esports-app.jar
      ```
 
 ### From Source
