@@ -26,8 +26,3 @@ replay_pid*
 # Ignore directories
 build/
 dist/
-docs/
-
-# Ignore NetBeans IDE private files
-nbproject/private/
-
