@@ -1,13 +1,18 @@
 /*
-File name:  GC_EGames_GUI.java
-Purpose:    Runs the GUI JFrame app
-Author:     Luke Wait
-Date:       03-Sept-2022
-Version:    3.0
-NOTES:      Complete
-            See the Technical Report: Development Plan section
-            for functionality checklist
- */
+File name: GCEsportsApp.java
+Description: Runs the GUI JFrame app
+Version: 1.2.0
+Author: ┬  ┬ ┬┬┌─┌─┐┬ ┬┌─┐╦╔╦╗
+        │  │ │├┴┐├┤ │││├─┤║ ║
+        ┴─┘└─┘┴ ┴└─┘└┴┘┴ ┴╩ ╩
+Date: September 03, 2022
+License: MIT License
+
+Dependencies:
+Java JDK 17
+
+GitHub Repository: https://github.com/LukeWait/gc-esports-app
+*/
 package gcesportsapp;
 
 // reading

@@ -10,18 +10,30 @@ This application helps manage competition data effectively using a user-friendly
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
-- [Testing](#testing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Source Code](#source-code)
 - [Dependencies](#dependencies)
 
 ## Installation
+### Dependencies
+Ensure that Java JDK 17 is installed on your system:
+- **Windows**: Download and install [Java JDK 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html).
+- **Linux**: Install Java JDK 17 using your package manager:
+  ```sh
+  sudo apt-get install openjdk-17-jdk   # For Debian-based systems
+  ```
+
 ### Executable
-#### Windows
-1. Download the latest Windows release from the [releases page](https://github.com/LukeWait/gc-esports-app/releases).
+1. Download the latest release from the [releases page](https://github.com/LukeWait/gc-esports-app/releases).
 2. Extract the contents to a desired location.
-3. Run the `GCEsportsApp.jar` file.
+3. Run the `GCEsportsApp.jar` file:
+   - **Windows**: Simply double-click the `GCEsportsApp.jar` file to run it.
+   - **Linux**: Make the `.jar` file executable and run it:
+     ```sh
+     chmod +x GCEsportsApp.jar
+     java -jar GCEsportsApp.jar
+     ```
 
 ### From Source
 To install and run the application from source:
@@ -30,38 +42,51 @@ To install and run the application from source:
     git clone https://github.com/LukeWait/gc-esports-app.git
     cd gc-esports-app
     ```
+2. Open the project directory with Apache NetBeans or another compatible IDE to build and run the application.
 
-2. Install Project Dependencies:
-    Ensure JDK 17 is installed. You can download it from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
-
-3. Open with Apache Netbeans or other compatible IDE:
 
 ## Usage
-The application manages competition data through three CSV files:
-- `competitions.csv`: Contains details about the history of matches.
-- `players.csv`: Contains details the individuals that makeup the teams.
-- `teams.csv`: Contains information about the teams.
-
-### Managing CSV Files
 1. Launch the application.
-2. Use the provided options to edit, update, or view the data.
+2. Use the provided functions to interact with the data:
+   - Create and view competition data.
+   - Create, view, and update team/player data.
+   - Note: There is currently no option to delete data.
+   - You will be prompted to save changes on exit.
+
+### Application Functions
+- **View All Team Competition Results**: Display a comprehensive list of all past competition results.
+- **View List of Top Teams**: Show a scoreboard with the top-performing teams based on competition results.
+- **Add New Competition Results**: Input and save results for new competitions.
+- **Add New Team**: Register a new team, including their contact information.
+- **Update Existing Team**: Modify the details of an already registered team.
 
 ## Development
 ### Project Structure
 ```sh
 gc-esports-app/
-├── nbproject/
+├── nbproject/                # NetBeans settings
 ├── src/
-│   ├── images/
-│   ├── data/
-│   └── gcesportsapp/
+│   ├── images/               # GUI design elements
+│   ├── data/                 # CSV storage files
+│   └── gcesportsapp/         # Project source code
 │       ├── GCEsportsApp.java
 │       ├── GCEsportsApp.form
 │       ├── Competition.java
 │       └── Team.java
-├── build.xml
-└── manifest.mf
+├── build.xml                 # Build configuration
+└── manifest.mf               # Manifest file for the JAR
 ```
+
+### Data Storage
+The application manages data through three CSV files:
+- `competitions.csv`: Contains details of previous competition results.
+- `players.csv`: Contains a list of players in each team.
+- `teams.csv`: Contains contact information for each team registered.
+
+### Creating New Releases
+- **Build the Application**: Use your IDE to compile and package the application into a `.jar` executable.
+
+- **Include CSV Files**: Ensure that the `.csv` files used for persistent storage are included in the `dist` folder, as they are necessary for the application’s functionality.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
@@ -69,10 +94,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Acknowledgments
 This project was developed as part of an assignment at TAFE Queensland for subject ICTPRG430.
 
-App requirements and boilerplate code provided by Hans Telford.
+Project requirements and initial GUI design/codebase provided by Hans Telford.
 
 ## Source Code
 The source code for this project can be found in the GitHub repository: [https://github.com/LukeWait/gc-esports-app](https://www.github.com/LukeWait/gc-esports-app).
 
 ## Dependencies
-- JDK 17
+- Java JDK 17

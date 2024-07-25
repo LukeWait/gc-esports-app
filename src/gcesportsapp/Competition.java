@@ -1,12 +1,19 @@
 /*
-File name:  Competition.java
-Purpose:    Provides instance variables, constructor and get/set methods 
-            for Competition class
-Author:     Luke Wait
-Date:       03-Sept-2022
-Version:    1.0
-NOTES:      Complete
- */
+File name: Competition.java
+Description: Provides instance variables, constructor and get/set methods 
+             for Competition class
+Version: 1.2.0
+Author: ┬  ┬ ┬┬┌─┌─┐┬ ┬┌─┐╦╔╦╗
+        │  │ │├┴┐├┤ │││├─┤║ ║
+        ┴─┘└─┘┴ ┴└─┘└┴┘┴ ┴╩ ╩
+Date: September 03, 2022
+License: MIT License
+
+Dependencies:
+Java JDK 17
+
+GitHub Repository: https://github.com/LukeWait/gc-esports-app
+*/
 package gcesportsapp;
 
 
