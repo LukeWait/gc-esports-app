@@ -61,6 +61,8 @@ To install and run the application from source:
 - **Update Existing Team**: Modify the details of an already registered team.
 
 ## Development
+This project was developed using Apache NetBeans, an integrated development environment (IDE) that facilitates Java application development. If using a different IDE, you may need to configure the environment to ensure compatibility with the project.
+
 ### Project Structure
 ```sh
 gc-esports-app/
