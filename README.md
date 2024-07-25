@@ -1,4 +1,4 @@
-# GC E-Sports Competition App
+# Gold Coast E-Sports Competition App
 ## Description
 This application helps manage competition data effectively using a user-friendly GUI. The app interacts with CSV files to manage teams, matches, and results.
 
