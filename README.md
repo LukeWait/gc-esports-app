@@ -65,9 +65,9 @@ To install and run the application from source:
 ```sh
 gc-esports-app/
 ├── nbproject/                # NetBeans settings
+├── data/                     # CSV storage files
 ├── src/
 │   ├── images/               # GUI design elements
-│   ├── data/                 # CSV storage files
 │   └── gcesportsapp/         # Project source code
 │       ├── GCEsportsApp.java
 │       ├── GCEsportsApp.form
@@ -86,7 +86,7 @@ The application manages data through three CSV files:
 ### Creating New Releases
 - **Build the Application**: Use your IDE to compile and package the application into a `.jar` executable.
 
-- **Include CSV Files**: Ensure that the `.csv` files used for persistent storage are included in the `dist` folder, as they are necessary for the application’s functionality.
+- **Include CSV Files**: When the build is complete, ensure that the `data` directory containing the `.csv` files is copied to the `dist` folder to provide the persistent memory required by the application.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.

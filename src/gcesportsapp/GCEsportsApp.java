@@ -108,7 +108,7 @@ public class GCEsportsApp extends javax.swing.JFrame
         try
         {
             // create reader and designate external file to read from
-            FileReader fr = new FileReader("src/data/teams.csv");
+            FileReader fr = new FileReader("data/teams.csv");
             // create bufferedReader which uses the reader object
             BufferedReader br = new BufferedReader(fr);
             // declare line string (used to read and store each line from file)
@@ -148,7 +148,7 @@ public class GCEsportsApp extends javax.swing.JFrame
         try
         {
             // create reading objects
-            FileReader fr = new FileReader("src/data/players.csv");
+            FileReader fr = new FileReader("data/players.csv");
             BufferedReader br = new BufferedReader(fr);
             String line;
 
@@ -207,7 +207,7 @@ public class GCEsportsApp extends javax.swing.JFrame
         try
         {
             // create reader and designate external file to read rom
-            FileReader fr = new FileReader("src/data/competitions.csv");
+            FileReader fr = new FileReader("data/competitions.csv");
             // create bufferedReader which uses the reader object
             BufferedReader br = new BufferedReader(fr);
             // declare line string (used to read and store each line read from file)
@@ -278,7 +278,7 @@ public class GCEsportsApp extends javax.swing.JFrame
         try
         {
             // create outputStream and designate the external file to write
-            FileOutputStream fos = new FileOutputStream("src/data/teams.csv", false);
+            FileOutputStream fos = new FileOutputStream("data/teams.csv", false);
             // create outputStreamWriter and designate the character set
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             // create bufferedWriter which uses the outputStreamWriter
@@ -309,7 +309,7 @@ public class GCEsportsApp extends javax.swing.JFrame
         try
         {
             // create outputStream and designate the external file to write
-            FileOutputStream fos = new FileOutputStream("src/data/players.csv", false);
+            FileOutputStream fos = new FileOutputStream("data/players.csv", false);
             // create outputStreamWriter and designate the character set
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             // create bufferedWriter which uses the outputStreamWriter
@@ -344,7 +344,7 @@ public class GCEsportsApp extends javax.swing.JFrame
         try
         {
             // create outputStream and designate the external file to write to
-            FileOutputStream fos = new FileOutputStream("src/data/competitions.csv", false);
+            FileOutputStream fos = new FileOutputStream("data/competitions.csv", false);
             // create outputStreamWriter and designate the character set
             OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             // create bufferedWriter which uses the outputStreamWriter to write to file                    
