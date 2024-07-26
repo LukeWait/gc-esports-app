@@ -16,7 +16,7 @@ This application helps manage competition data effectively using a user-friendly
 - [Dependencies](#dependencies)
 
 ## Installation
-### Dependencies
+### Prerequisites
 Ensure that Java JDK 17 is installed on your system:
 - **Windows**: Download and install [Java JDK 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html).
 - **Linux**: Install Java JDK 17 using your package manager:
